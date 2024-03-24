@@ -17,10 +17,3 @@ class CarModelForm(forms.ModelForm):
 
         if factory_year < 1975:
             self.add_error('factory_year', 'Não é permitido carros inferiores a 1975!')
-
-
-    def clean_photo(self):
-        photo = self.cleaned_data.get('photo')
-
-        if not photo:
-            self.add_error('photo', 'Por favor selecione uma foto para o veículo')
