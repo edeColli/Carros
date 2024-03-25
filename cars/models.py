@@ -17,6 +17,7 @@ class Car(models.Model):
     value = models.FloatField(blank=True, null=True)    
     collor = models.CharField(max_length=30, blank=True, null=True)
     photo = models.ImageField(upload_to='cars/', blank=True, null=True)
+    bio = models.TextField(blank=True, null=True)
 
     def __str__(self):
         return self.model
