@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 client = OpenAI(
-    api_key='API_KEY'
+    api_key='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'
 )
 def get_car_ai_bio(model, brand, year):
     message = ''''
